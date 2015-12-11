@@ -1,9 +1,14 @@
-# Code by Gonzalo Rolon Morinelli, Sep 20 2015
-# The following code was originally written as a solution for Project Euler's Problem# 9
-# For more information, goto: https://projecteuler.net/problem=9
+"""Code by Gonzalo Rolon Morinelli, Sep 20 2015.
+
+The following code was originally written as a solution for Project Euler's
+Problem# 9
+For more information, goto: https://projecteuler.net/problem=9
+"""
+
 
 def find_pyth_triplet(sum_t):
-    """
+    """Return Pythagorean triplet for which a + b + c = sum_t.
+
     Return the Plato's Pythagorean triplet (a, b, c)
     for which a + b + c = sum_t, if any.
     Return a = b = c = -1 if not.

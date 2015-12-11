@@ -1,12 +1,17 @@
-# Code by Gonzalo Rolon Morinelli, Sep 9 2015
-# The following code was originally written as a solution for Project Euler's Problem# 3
-# For more information, goto: https://projecteuler.net/problem=3
+"""Code by Gonzalo Rolon Morinelli, Sep 9 2015.
+
+The following code was originally written as a solution for Project Euler's
+Problem# 3
+For more information, goto: https://projecteuler.net/problem=3
+"""
+
 
 import math
 
+
 def get_primes_lt(n):
-    """
-    Return a list with all the prime numbers lesser than n.
+    """Return a list with all the prime numbers lesser than n.
+
     Custom implementation of Eratosthenes's sieve.
     """
     comp_set = set([])
@@ -22,9 +27,10 @@ def get_primes_lt(n):
         number += 1
     return prime_list
 
+
 def find_largest_prime_factor(n):
-    """
-    Return the largest prime factor of the input composite number n.
+    """Return the largest prime factor of the input composite number n.
+
     If n is unusual, it returns the second largest prime factor instead.
     """
     primes = get_primes_lt(math.sqrt(n) + 1)

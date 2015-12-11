@@ -1,12 +1,16 @@
-# Code by Gonzalo Rolon Morinelli, Sep 13 2015
-# The following code was originally written as a solution for Project Euler's Problem# 7
-# For more information, goto: https://projecteuler.net/problem=7
+"""Code by Gonzalo Rolon Morinelli, Sep 13 2015.
+
+The following code was originally written as a solution for Project Euler's
+Problem# 7
+For more information, goto: https://projecteuler.net/problem=7
+"""
 
 import math
 
+
 def find_nth_prime(n):
-    """
-    Return the nth prime.
+    """Return the nth prime.
+
     Modification to the Eratosthenes sieve using upper bound prime
     approximation for n >= 6.
     """

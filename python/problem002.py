@@ -1,11 +1,13 @@
-# Code by Gonzalo Rolon Morinelli, Sep 8 2015
-# The following code was originally written as a solution for Project Euler's Problem# 2
-# For more information, goto: https://projecteuler.net/problem=1
+"""Code by Gonzalo Rolon Morinelli, Sep 8 2015.
+
+The following code was originally written as a solution for Project Euler's
+Problem# 2
+For more information, goto: https://projecteuler.net/problem=1
+"""
+
 
 def generate_fibonacci():
-    """
-    Return an unlimited Fibonacci's sequence generator.
-    """
+    """Return an unlimited Fibonacci's sequence generator."""
     a, b = 0, 1
     while True:
         yield a

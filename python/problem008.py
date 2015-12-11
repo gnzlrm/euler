@@ -1,9 +1,15 @@
-# Code by Gonzalo Rolon Morinelli, Sep 19 2015
-# The following code was originally written as a solution for Project Euler's Problem# 8
-# For more information, goto: https://projecteuler.net/problem=8
+"""Code by Gonzalo Rolon Morinelli, Sep 19 2015.
+
+The following code was originally written as a solution for Project Euler's
+Problem# 8
+For more information, goto: https://projecteuler.net/problem=8
+"""
+
 
 def find_greatest_product(n, t_num):
     """
+    Find greatest product of consecutive numbers.
+
     Find the greatest product of the sequence of n consecutive numbers
     in the input t_num.
     """

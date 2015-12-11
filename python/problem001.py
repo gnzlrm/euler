@@ -1,11 +1,13 @@
-# Code by Gonzalo Rolon Morinelli, Sep 8 2015
-# The following code was originally written as a solution for Project Euler's Problem# 1
-# For more information, goto: https://projecteuler.net/problem=1
+"""Code by Gonzalo Rolon Morinelli, Sep 8 2015.
+
+The following code was originally written as a solution for Project Euler's
+Problem# 1
+For more information, goto: https://projecteuler.net/problem=1
+"""
+
 
 def sum_multiples(multipliers, limit):
-    """
-    Return the sum of all multiples of [multipliers] lesser than the input limit.
-    """
+    """Return the sum of all multiples of [multipliers] < the input limit."""
     multiples_sum = 0
     for idx in range(limit):
         for multiplier in multipliers:
