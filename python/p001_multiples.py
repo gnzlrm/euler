@@ -1,4 +1,5 @@
-"""Code by Gonzalo Rolon Morinelli, Sep 8 2015.
+"""
+Code by Gonzalo Rolon Morinelli, Sep 8 2015.
 
 The following code was originally written as a solution for Project Euler's
 Problem# 1

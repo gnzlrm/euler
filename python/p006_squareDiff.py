@@ -1,4 +1,5 @@
-"""Code by Gonzalo Rolon Morinelli, Sep 12 2015.
+"""
+Code by Gonzalo Rolon Morinelli, Sep 12 2015.
 
 The following code was originally written as a solution for Project Euler's
 Problem# 6
@@ -17,5 +18,5 @@ def get_square_sum_lt(n):
     return sum(interval) ** 2
 
 if __name__ == '__main__':
-    # Problem solution
+    # Problem solution.
     print get_square_sum_lt(100) - get_sum_squares_lt(100)

@@ -1,4 +1,5 @@
-"""Code by Gonzalo Rolon Morinelli, Sep 9 2015.
+"""
+Code by Gonzalo Rolon Morinelli, Sep 9 2015.
 
 The following code was originally written as a solution for Project Euler's
 Problem# 3
@@ -10,7 +11,8 @@ import math
 
 
 def get_primes_lt(n):
-    """Return a list with all the prime numbers lesser than n.
+    """
+    Return a list with all the prime numbers lesser than n.
 
     Custom implementation of Eratosthenes's sieve.
     """
@@ -29,7 +31,8 @@ def get_primes_lt(n):
 
 
 def find_largest_prime_factor(n):
-    """Return the largest prime factor of the input composite number n.
+    """
+    Return the largest prime factor of the input composite number n.
 
     If n is unusual, it returns the second largest prime factor instead.
     """
