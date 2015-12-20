@@ -10,7 +10,5 @@ var primesImport = require('./p003_primes.js');
 
 if (require.main === module) {
     // Problem solution.
-    console.log(primesImport.getPrimesLt(2000000).reduce(function(a, b) {
-        return a + b;
-    }));
+    console.log(primesImport.getPrimesLt(2000000).reduce((a, b) => a + b));
 }

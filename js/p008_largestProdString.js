@@ -14,14 +14,14 @@ function findGreatestProduct(n, tNum) {
     in the input tNum.
     */
     var tSeqs = [];
-    var zeroIdx = tNum.split('').reduce(function(a, v, i) {
+    var zeroIdx = tNum.split('').reduce((a, v, i) => {
         if (v === '0') {
             a.push(i);
         }
         return a;
     }, [-1]);
     zeroIdx.push(tNum.length);
-    var zeroDist = zeroIdx.reduce(function(a, v, i, p) {
+    var zeroDist = zeroIdx.reduce((a, v, i, p) => {
         if (i < p.length - 1) {
             a.push(p[i + 1] - v);
         }
@@ -40,7 +40,7 @@ function findGreatestProduct(n, tNum) {
     }
     var maxMul = 0;
     for (var seq of tSeqs) {
-        var seqMul = seq.split('').reduce(function(a, b) { return a * b; });
+        var seqMul = seq.split('').reduce((a, b) => a * b);
         if (seqMul > maxMul) {
             maxMul = seqMul;
         }

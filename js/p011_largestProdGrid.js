@@ -23,7 +23,7 @@ function parseElement(e) {
 
 function getProduct(nList) {
     // Return the product of the input list of numbers.
-    return nList.reduce(function(x, y) { return x * y; });
+    return nList.reduce((x, y) => x * y);
 }
 
 function getMaxProductByDir(grid, n, stepH, stepV, startH) {

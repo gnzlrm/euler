@@ -37,5 +37,5 @@ module.exports.findPythTriplet = findPythTriplet;
 
 if (require.main === module) {
     // Problem solution.
-    console.log(findPythTriplet(1000).reduce(function(a, b) { return a * b ;}));
+    console.log(findPythTriplet(1000).reduce((a, b) => a * b));
 }

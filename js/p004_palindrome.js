@@ -35,7 +35,7 @@ function findLargestPalindromeMultiple(n) {
     var startIdx = Math.pow(10, n) - 1;
     var endIdx = (startIdx / 10);
     var palindromes = Array.from(getAllPalindromesDigits(n * 2));
-    palindromes.sort(function(a, b) {return b - a;});
+    palindromes.sort((a, b) => b - a);
     for (var palNum of palindromes) {
         for (i = startIdx; i > endIdx; i--) {
             if ((palNum % i === 0) && (endIdx < palNum / i) && (palNum / i <= startIdx)) {

@@ -22,7 +22,7 @@ function findLcmLt(n) {
             maxPowers.add(primePower);
         }
     }
-    return Array.from(maxPowers).reduce(function(a, b) { return a * b; });
+    return Array.from(maxPowers).reduce((a, b) => a * b);
 }
 
 module.exports.findLcmLt = findLcmLt;

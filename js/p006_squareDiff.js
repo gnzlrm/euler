@@ -17,7 +17,7 @@ function getSquaresSumLt(n) {
     for (i = 0; i < n + 1; i++) {
         interval.push(i);
     }
-    return Math.pow(interval.reduce(function(a, b) { return a + b; }), 2);
+    return Math.pow(interval.reduce((a, b) => a + b), 2);
 }
 
 module.exports.getSumSquaresLt = getSumSquaresLt;
