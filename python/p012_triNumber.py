@@ -31,7 +31,7 @@ def get_trinum_divisors(n_factor, m_factor):
     return reduce(lambda x, y: x * y, pows_one)
 
 
-def compute_trinumber_num_divisors(x):
+def compute_trinumber_divisors_gt(x):
     """Return the first triangle number with > x divisors."""
     n = 1
     m = 2
@@ -47,4 +47,4 @@ def compute_trinumber_num_divisors(x):
 
 if __name__ == '__main__':
     # Problem solution.
-    print compute_trinumber_num_divisors(500)
+    print compute_trinumber_divisors_gt(500)
