@@ -8,7 +8,10 @@ For more information, goto: https://projecteuler.net/problem=14
 
 
 def rcmem_collatz_ln(n, k_lens={1: 0}):
-    """Return the length of the Collatz sequence yield by n."""
+    """Return the length of the Collatz sequence yield by n.
+
+    Memoized recursion implementation.
+    """
     if n in k_lens:
         return k_lens[n]
     else:

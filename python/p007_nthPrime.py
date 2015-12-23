@@ -10,8 +10,7 @@ import math
 
 
 def find_nth_prime(n):
-    """
-    Return the nth prime.
+    """Return the nth prime.
 
     Modification to the Eratosthenes sieve using upper bound prime
     approximation for n >= 6.

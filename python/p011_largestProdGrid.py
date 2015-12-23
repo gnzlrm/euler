@@ -21,8 +21,7 @@ def get_product(num_list):
 
 
 def get_max_product_by_dir(grid, n, step_h, step_v, start_h=0):
-    """
-    Get the maximum product of n consecutive numbers in a direction.
+    """Get the maximum product of n consecutive numbers in a direction.
 
     Given a list representation of a numeric matrix, return the largest product
     of n consecutive numbers in a direction specified by paremeters step_h and
@@ -42,8 +41,7 @@ def get_max_product_by_dir(grid, n, step_h, step_v, start_h=0):
 
 
 def get_max_product_in_grid(grid_string, n):
-    """
-    Return the max product of n consecutive numbers in a grid.
+    """Return the max product of n consecutive numbers in a grid.
 
     Given a string representation of a numeric matrix, return the largest
     product of n consecutive numbers aligned either horizontally, vertically or

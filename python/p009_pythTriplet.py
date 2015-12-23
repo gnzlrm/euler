@@ -8,8 +8,7 @@ For more information, goto: https://projecteuler.net/problem=9
 
 
 def find_pyth_triplet(sum_t):
-    """
-    Return Pythagorean triplet for which a + b + c = sum_t.
+    """Return Pythagorean triplet for which a + b + c = sum_t.
 
     Return the Plato's Pythagorean triplet (a, b, c)
     for which a + b + c = sum_t, if any.

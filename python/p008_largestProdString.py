@@ -8,8 +8,7 @@ For more information, goto: https://projecteuler.net/problem=8
 
 
 def find_greatest_product(n, t_num):
-    """
-    Find greatest product of consecutive numbers.
+    """Find greatest product of consecutive numbers.
 
     Find the greatest product of the sequence of n consecutive numbers
     in the input t_num.

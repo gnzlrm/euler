@@ -23,8 +23,7 @@ def get_all_palindromes_digits(n):
 
 
 def find_largest_palindrome_multiple(n):
-    """
-    Find the largest palindromic multiple.
+    """Find the largest palindromic multiple.
 
     Returns a tuple containing the largest palindromic number multiple of
     two numbers of input length n, and it's two factors.
