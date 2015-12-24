@@ -7,8 +7,8 @@ For more information, goto: https://projecteuler.net/problem=11
 """
 
 
-def parse_grid(grid_string):
-    """Parse the input string to an n-square box grid."""
+def parse_num_multistring(grid_string):
+    """Parse the input multiline string to a list of list of numbers."""
     grid = grid_string.splitlines()
     for idx in range(len(grid)):
         grid[idx] = [int(i) for i in grid[idx].split(' ')]
@@ -47,7 +47,7 @@ def get_max_product_in_grid(grid_string, n):
     product of n consecutive numbers aligned either horizontally, vertically or
     diagonally.
     """
-    grid = parse_grid(grid_string)
+    grid = parse_num_multistring(grid_string)
     return max(get_max_product_by_dir(grid, n, 1, 0),
                get_max_product_by_dir(grid, n, 0, 1),
                get_max_product_by_dir(grid, n, 1, 1),
