@@ -30,4 +30,5 @@ def compute_longest_collatz(n):
     return max_num
 
 if __name__ == '__main__':
+    # Problem solution.
     print compute_longest_collatz(1000000)
