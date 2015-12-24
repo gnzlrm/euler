@@ -41,7 +41,7 @@ TENS_DICT = {'0': 0,
 
 
 def rc_num_letter_count(n):
-    """Return the count of letters in the word representation of n <= 1000."""
+    """Return the count of letters in the name of n <= 1000."""
     len_n = len(n)
     if len_n == 1:
         return UNITS_DICT[n]
@@ -59,11 +59,7 @@ def rc_num_letter_count(n):
 
 
 def compute_sum_num_letter_lte(n):
-    """Return the sum of letters in [1, n <= 1000].
-
-    Returns the sum of letters used in the word representation of each
-    number in [1, n<= 1000].
-    """
+    """Return the sum of letters in the names of [1, n <= 1000]."""
     sum_letter = 0
     for num in range(1, n + 1):
         sum_letter += rc_num_letter_count(str(num))
