@@ -40,8 +40,8 @@ TENS_DICT = {'0': 0,
              '9': 6}
 
 
-def rc_num_letter_count(n):
-    """Return the count of letters in the name of n <= 1000."""
+def rc_num_letters_count(n):
+    """Return the count of letters in the name of number n <= 1000."""
     len_n = len(n)
     if len_n == 1:
         return UNITS_DICT[n]
@@ -50,21 +50,21 @@ def rc_num_letter_count(n):
     else:
         if len_n == 3:
             extra = 10 if n[1:] != '00' else 7
-            return UNITS_DICT[n[0]] + extra + rc_num_letter_count(n[1:])
+            return UNITS_DICT[n[0]] + extra + rc_num_letters_count(n[1:])
         if len_n == 2:
             if n[0] == '1':
                 return TEN_DICT[n]
             else:
-                return TENS_DICT[n[0]] + rc_num_letter_count(n[1])
+                return TENS_DICT[n[0]] + rc_num_letters_count(n[1])
 
 
-def compute_sum_num_letter_lte(n):
-    """Return the sum of letters in the names of [1, n <= 1000]."""
+def compute_sum_num_letters_lte(n):
+    """Return the sum of letters in the names of numbers [1, n <= 1000]."""
     sum_letter = 0
     for num in range(1, n + 1):
-        sum_letter += rc_num_letter_count(str(num))
+        sum_letter += rc_num_letters_count(str(num))
     return sum_letter
 
 if __name__ == '__main__':
     # Problem solution.
-    print compute_sum_num_letter_lte(1000)
+    print compute_sum_num_letters_lte(1000)
