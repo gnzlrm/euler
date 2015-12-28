@@ -12,10 +12,10 @@ from p011_largestProdGrid import parse_num_multistring
 
 def compute_max_path(tri_list, idx):
     """Compute the maximum sum in the paths in triangle tri_list."""
+    i_one = idx + 1
     if len(tri_list) == 1:
-        return max(tri_list[0][idx], tri_list[0][idx + 1])
+        return max(tri_list[0][idx], tri_list[0][i_one])
     else:
-        i_one = idx + 1
         return max(tri_list[0][idx] + compute_max_path(tri_list[1:], idx),
                    tri_list[0][i_one] + compute_max_path(tri_list[1:], i_one))
 
