@@ -13,9 +13,12 @@ from math import sqrt
 def get_sum_divisors(n):
     """Get the sum of all the divisors of n."""
     divs = 1
-    for num in range(2, int(sqrt(n)) + 1):
+    square_one = sqrt(n) + 1
+    for num in range(2, int(square_one)):
         if n % num == 0:
-            divs += num + (n / num)
+            divs += num + n / num
+    if square_one == int(square_one):
+        divs -= square_one
     return divs
 
 
