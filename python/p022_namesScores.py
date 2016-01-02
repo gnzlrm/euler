@@ -26,8 +26,9 @@ def read_list_file(path):
 def get_name_score(name, idx):
     """Return the name score of a given name and index in a sorted namelist.
 
-    Name score is determine by the sum of the alphabetical position of each
-    letter in name times the ordinal number (index + 1) in a sorted namelist.
+    Name score is determine by the sum of the ordinal rank of each
+    letter of name in respect to the alphabet times the ordinal rank of name
+    in a sorted namelist.
     """
     return sum(map(lambda x: ord(x) - 64, name)) * (idx + 1)  # - 64 for upper.
 
@@ -39,6 +40,7 @@ def compute_total_name_score(path):
     for idx, name in enumerate(namelist):
         score += get_name_score(name, idx)
     return score
+
 
 if __name__ == '__main__':
     # Problem solution.
