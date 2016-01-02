@@ -17,8 +17,7 @@ def read_list_file(path):
     Make a list of letter-only strings with the file content splitting by
     commas.
     """
-    list_file = open(path, 'r')
-    list_string = list_file.read()
+    list_string = open(path, 'r').read()
     list_string = map(lambda x: re.sub(r'\W+', '', x), list_string.split(','))
     list_string.sort()
     return list_string
