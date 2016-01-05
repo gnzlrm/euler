@@ -7,20 +7,21 @@ For more information, goto: https://projecteuler.net/problem=24
 """
 
 
-from math import factorial, floor
+from math import factorial
+from math import floor
 
 
 def get_nth_permutation(elements, n):
     """Return the n-th lexicographical permutation of sorted elements."""
-    if len(elements) == 1:
+    if len(elements) <= 1:
         return elements
     else:
-        rem_fact = factorial(len(elements) - 1)
-        idx = int(floor(n / rem_fact))
-        rst = n - (idx * rem_fact)
+        fact = factorial(len(elements) - 1)
+        idx = int(floor(n / fact))
+        rst = n - (idx * fact)
         if rst == 0:
             idx -= 1
-            rst = n - (idx * rem_fact)
+            rst = n - (idx * fact)
         rem_str = elements[:idx] + elements[idx + 1:]
         return elements[idx] + get_nth_permutation(rem_str, rst)
 
