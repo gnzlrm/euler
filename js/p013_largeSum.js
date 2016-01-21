@@ -34,6 +34,9 @@ function sumLargeNumbers(list) {
             total[i] = colResult;
         }
     }
+    if (carry === 0) {
+        carry = '';
+    }
     return carry + total.join('');
 }
 
