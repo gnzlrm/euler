@@ -6,6 +6,8 @@ Problem# 3
 For more information, goto: https://projecteuler.net/problem=3
 */
 
+/*jshint esnext: true*/
+
 function getPrimesLt(n) {
     /**
     Return a list with all the prime numbers lesser than n.
