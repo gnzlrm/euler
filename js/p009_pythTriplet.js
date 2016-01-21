@@ -6,6 +6,8 @@ Problem# 9
 For more information, goto: https://projecteuler.net/problem=9
 */
 
+/*jshint esnext: true*/
+
 function findPythTriplet(sumT) {
     /**
     Return Pythagorean triplet for which a + b + c = sum_t.

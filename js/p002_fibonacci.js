@@ -6,6 +6,8 @@ Problem# 2
 For more information, goto: https://projecteuler.net/problem=2
 */
 
+/*jshint esnext: true*/
+
 function* generateFibonacci () {
     // Return an unlimited Fibonacci's sequence generator.
     var a = 0;

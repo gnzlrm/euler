@@ -6,6 +6,8 @@ Problem# 1
 For more information, goto: https://projecteuler.net/problem=1
 */
 
+/*jshint esnext: true*/
+
 function sumMultiples (multipliers, limit) {
     // Return the sum of all multiples of [multipliers] < the input limit.
     var multiplesSum = 0;

@@ -6,6 +6,8 @@ Problem# 12
 For more information, goto: https://projecteuler.net/problem=12
 */
 
+/*jshint esnext: true*/
+
 var extend = require('util')._extend;
 
 function getPrimeFactors(n) {

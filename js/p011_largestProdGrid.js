@@ -6,6 +6,9 @@ Problem# 11
 For more information, goto: https://projecteuler.net/problem=11
 */
 
+/*jshint multistr: true*/
+/*jshint esnext: true*/
+
 function parseGrid(gridString) {
     // Parse the input string to an n-square box grid.
     var grid = gridString.match(/[^\r\n]+/g);

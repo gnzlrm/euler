@@ -6,6 +6,8 @@ Problem# 4
 For more information, goto: https://projecteuler.net/problem=4
 */
 
+/*jshint esnext: true*/
+
 function getAllPalindromesDigits(n) {
     // Return all the possible palindromic numbers of input length n.
     if (n === 1) {

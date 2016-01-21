@@ -6,6 +6,8 @@ Problem# 13
 For more information, goto: https://projecteuler.net/problem=13
 */
 
+/*jshint multistr: true */
+
 var parseElement = require('./p011_largestProdGrid.js').parseElement;
 
 function parseNumbers(sNums) {

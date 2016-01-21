@@ -6,6 +6,8 @@ Problem# 10
 For more information, goto: https://projecteuler.net/problem=10
 */
 
+/*jshint esnext: true*/
+
 var primesImport = require('./p003_primes.js');
 
 if (require.main === module) {

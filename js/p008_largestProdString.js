@@ -6,6 +6,8 @@ Problem# 8
 For more information, goto: https://projecteuler.net/problem=8
 */
 
+/*jshint esnext: true*/
+
 function findGreatestProduct(n, tNum) {
     /**
     Find greatest product of consecutive numbers.

@@ -6,6 +6,8 @@ Problem# 5
 For more information, goto: https://projecteuler.net/problem=5
 */
 
+/*jshint esnext: true*/
+
 var primesImport = require('./p003_primes.js');
 
 function findLcmLt(n) {
