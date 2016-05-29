@@ -6,7 +6,6 @@ Problem# 22
 For more information, goto: https://projecteuler.net/problem=22
 """
 
-
 import os
 import re
 
@@ -18,7 +17,7 @@ def read_list_file(path):
     commas.
     """
     with open(path, 'r') as tgt_file:
-        list_string = map(lambda x: re.sub(r'\W+', '', x), tgt_file.read().split(','))
+        list_string = [re.sub(r'\W+', '', x) for x in tgt_file.read().split(',')]
         list_string.sort()
         return list_string
 
