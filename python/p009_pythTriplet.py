@@ -23,10 +23,10 @@ def find_pyth_triplet(sum_t):
         if sum_t % t == 0:
             non_mul_flag = False
         elif t > sum_t:
-            return (-1, -1, -1)
+            return -1, -1, -1
         else:
             m += 1
-    return (a * sum_t / t, b * sum_t / t, c * sum_t / t)
+    return a * sum_t / t, b * sum_t / t, c * sum_t / t
 
 if __name__ == '__main__':
     # Problem solution

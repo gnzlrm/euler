@@ -17,10 +17,10 @@ def read_list_file(path):
     Make a list of letter-only strings with the file content splitting by
     commas.
     """
-    list_string = open(path, 'r').read()
-    list_string = map(lambda x: re.sub(r'\W+', '', x), list_string.split(','))
-    list_string.sort()
-    return list_string
+    with open(path, 'r') as tgt_file:
+        list_string = map(lambda x: re.sub(r'\W+', '', x), tgt_file.read().split(','))
+        list_string.sort()
+        return list_string
 
 
 def get_name_score(name, idx):
@@ -44,4 +44,4 @@ def compute_total_name_score(path):
 
 if __name__ == '__main__':
     # Problem solution.
-    print compute_total_name_score(os.getcwd() + '/python/p022_names.txt')
+    print compute_total_name_score(os.getcwd() + "/p022_names.txt")
