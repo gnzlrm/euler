@@ -16,4 +16,4 @@
 (defn lazy-sum-multiples-less-than
   "Return the sum of all multiples of [mults] lower than n. Implemented using lazy-sequences."
   [n & mults]
-  (reduce + (set (apply concat (map #(range % n %) mults)))))
+  (reduce + (set (reduce concat [] (map #(range % n %) mults)))))
